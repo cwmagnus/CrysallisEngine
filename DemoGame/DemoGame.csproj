@@ -50,9 +50,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\CrysallisNativeWrapper\CrysallisNativeWrapper.vcxproj">
-      <Project>{3a51184c-d922-4c9f-89fc-d8d59d8e6996}</Project>
-      <Name>CrysallisNativeWrapper</Name>
+    <ProjectReference Include="..\Crysallis\Crysallis.csproj">
+      <Project>{fc75b0c3-34d2-4055-a7f6-8afaeff42b97}</Project>
+      <Name>Crysallis</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
