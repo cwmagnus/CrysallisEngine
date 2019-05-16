@@ -12,7 +12,7 @@ namespace CrysallisNative
 
 	}
 
-	VideoMode::VideoMode(unsigned int modeWidth, unsigned int modeHeight, unsigned int modeRefreshRate) :
+	VideoMode::VideoMode(int modeWidth, int modeHeight, int modeRefreshRate) :
 		Width(modeWidth),
 		Height(modeHeight),
 		RefreshRate(modeRefreshRate)
@@ -24,7 +24,7 @@ namespace CrysallisNative
 	{
 		GLFWmonitor* monitor = glfwGetPrimaryMonitor();
 
-		// Get the video mode from the monitor if valid
+		// Get the video mode from the monitor if monitor exists
 		const GLFWvidmode* mode;
 		if (monitor)
 		{
@@ -33,28 +33,6 @@ namespace CrysallisNative
 		}
 		
 		return VideoMode();
-	}
-
-	const std::vector<VideoMode> VideoMode::GetFullScreenModes()
-	{
-		int modeCount;
-		GLFWmonitor* monitor = glfwGetPrimaryMonitor();
-		
-		// Get the list of available video modes if the monitor is valid
-		const GLFWvidmode* modes;
-		if (monitor)
-		{
-			modes = glfwGetVideoModes(monitor, &modeCount);
-			std::vector<VideoMode> videoModes(modeCount);
-			for (int i = 0; i < modeCount; i++)
-			{
-				videoModes[i] = VideoMode(modes[i].width, modes[i].height, modes[i].refreshRate);
-			}
-
-			return videoModes;
-		}
-
-		return std::vector<VideoMode>();
 	}
 
 	GLFWmonitor* VideoMode::GetPrimaryMonitorHandle()

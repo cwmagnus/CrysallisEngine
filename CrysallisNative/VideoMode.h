@@ -1,7 +1,5 @@
 #pragma once
 
-#include <vector>
-
 struct GLFWmonitor;
 
 namespace CrysallisNative
@@ -9,10 +7,10 @@ namespace CrysallisNative
 	class VideoMode
 	{
 	public:
-		unsigned int Width, Height, RefreshRate;
+		int Width, Height, RefreshRate;
 
 		VideoMode();
-		VideoMode(unsigned int modeWidth, unsigned int modeHeight, unsigned int modeRefreshRate = 60);
+		VideoMode(int modeWidth, int modeHeight, int modeRefreshRate = 60);
 
 		inline bool IsValid() const
 		{
@@ -20,7 +18,6 @@ namespace CrysallisNative
 		}
 
 		static VideoMode GetDesktopMode();
-		static const std::vector<VideoMode> GetFullScreenModes();
 		static GLFWmonitor* GetPrimaryMonitorHandle();
 	};
 }

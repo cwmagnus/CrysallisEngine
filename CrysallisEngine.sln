@@ -11,8 +11,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrysallisTests", "Crysallis
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoGame", "DemoGame\DemoGame.csproj", "{D31B7A7D-10C3-4B71-878D-1B5D9766EA5B}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CrysallisNativeWrapper", "CrysallisNativeWrapper\CrysallisNativeWrapper.vcxproj", "{3A51184C-D922-4C9F-89FC-D8D59D8E6996}"
-EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CrysallisNative", "CrysallisNative\CrysallisEngine.vcxproj", "{80C966E2-69C9-43A2-80A2-295B4736B270}"
 EndProject
 Global
@@ -71,16 +69,6 @@ Global
 		{D31B7A7D-10C3-4B71-878D-1B5D9766EA5B}.Release|x64.Build.0 = Release|Any CPU
 		{D31B7A7D-10C3-4B71-878D-1B5D9766EA5B}.Release|x86.ActiveCfg = Release|Any CPU
 		{D31B7A7D-10C3-4B71-878D-1B5D9766EA5B}.Release|x86.Build.0 = Release|Any CPU
-		{3A51184C-D922-4C9F-89FC-D8D59D8E6996}.Debug|Any CPU.ActiveCfg = Debug|Win32
-		{3A51184C-D922-4C9F-89FC-D8D59D8E6996}.Debug|x64.ActiveCfg = Debug|x64
-		{3A51184C-D922-4C9F-89FC-D8D59D8E6996}.Debug|x64.Build.0 = Debug|x64
-		{3A51184C-D922-4C9F-89FC-D8D59D8E6996}.Debug|x86.ActiveCfg = Debug|Win32
-		{3A51184C-D922-4C9F-89FC-D8D59D8E6996}.Debug|x86.Build.0 = Debug|Win32
-		{3A51184C-D922-4C9F-89FC-D8D59D8E6996}.Release|Any CPU.ActiveCfg = Release|Win32
-		{3A51184C-D922-4C9F-89FC-D8D59D8E6996}.Release|x64.ActiveCfg = Release|x64
-		{3A51184C-D922-4C9F-89FC-D8D59D8E6996}.Release|x64.Build.0 = Release|x64
-		{3A51184C-D922-4C9F-89FC-D8D59D8E6996}.Release|x86.ActiveCfg = Release|Win32
-		{3A51184C-D922-4C9F-89FC-D8D59D8E6996}.Release|x86.Build.0 = Release|Win32
 		{80C966E2-69C9-43A2-80A2-295B4736B270}.Debug|Any CPU.ActiveCfg = Debug|Win32
 		{80C966E2-69C9-43A2-80A2-295B4736B270}.Debug|x64.ActiveCfg = Debug|x64
 		{80C966E2-69C9-43A2-80A2-295B4736B270}.Debug|x64.Build.0 = Debug|x64

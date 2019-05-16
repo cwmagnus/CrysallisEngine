@@ -41,14 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Game.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\CrysallisNativeWrapper\CrysallisNativeWrapper.vcxproj">
-      <Project>{3a51184c-d922-4c9f-89fc-d8d59d8e6996}</Project>
-      <Name>CrysallisNativeWrapper</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
